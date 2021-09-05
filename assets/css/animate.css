@@ -1,0 +1,47 @@
+@import "./Effects.css";
+
+[data-AnimeIntro] {
+  opacity: 0;
+  filter: blur(2px);
+}
+
+[data-AnimeIntro].activeAnimeIntro {
+  opacity: 1;
+  animation: AnimeIntro 0.5s forwards;
+  filter: blur(0px);
+}
+
+/*******************/
+
+[data-scroll] {
+  opacity: 0;
+  filter: blur(5px);
+}
+
+[data-scroll].activeDataScroll {
+  filter: blur(0px);
+  opacity: 1;
+  animation: AnimateUp 0.5s forwards;
+}
+
+/*******************/
+
+[data-slide] {
+  display: none !important;
+}
+
+[data-slide].activeSlide {
+  display: flex !important;
+  animation: AnimateRight 0.7s forwards;
+}
+
+/*******************/
+
+[data-scrollRight] {
+  opacity: 0;
+}
+
+[data-scrollRight].activeRight {
+  opacity: 1;
+  animation: AnimateRight 0.5s forwards;
+}
