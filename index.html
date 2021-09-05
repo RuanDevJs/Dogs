@@ -21,11 +21,11 @@
           <img src="./assets/img/IMG-LOGO.svg" alt="logo">
         </div>
         <div>
-          <ul class="header-nav">
-            <li><a href="#" class="fs-20 c-white" data-AnimeIntro>Sobre</a></li>
-            <li><a href="#" class="fs-20 c-white" data-AnimeIntro>Produtos</a></li>
-            <li><a href="#" class="fs-20 c-white" data-AnimeIntro>Contato</a></li>
-            <li><a href="#" class="fs-20 c-white" data-AnimeIntro>Portfólio</a></li>
+          <ul class="header-nav" data-nav>
+            <li><a href="#sobre" class="fs-20 c-white" data-AnimeIntro>Sobre</a></li>
+            <li><a href="#produtos" class="fs-20 c-white" data-AnimeIntro>Produtos</a></li>
+            <li><a href="#contato" class="fs-20 c-white" data-AnimeIntro>Contato</a></li>
+            <li><a href="#portfolio" class="fs-20 c-white" data-AnimeIntro>Portfólio</a></li>
           </ul>
         </div>
         <div class="btn-component">
@@ -136,11 +136,53 @@
       </div>
     </div>
   </section>
-  <section class="contato">
+  <section class="contato" id="contato" data-scrollRight>
+    <h1 class="fs-32 c-black mtb-50">contato</h1>
     <div class="contato-container">
-
+      <div class="contato-item">
+        <img src="./assets/img/img-local.svg" alt="local">
+        <div>
+          <div class="item">
+            <h2 class="fs-20 c-grey-2">Endereço</h2>
+            <p class="fs-14 c-grey-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+          </div>
+          <div class="item">
+            <h2 class="fs-20 c-grey-2">Telefone</h2>
+            <p class="fs-14 c-grey-2">(31) 99999-9999</p>
+          </div>
+          <div class="item">
+            <h2 class="fs-20 c-grey-2">Mande um feedback</h2>
+            <textarea cols="30" rows="10" class="fs-14 c-black"></textarea>
+            <div class="btn-component-2">
+              <button class="c-black fs-22">Enviar</button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
+  <section class="portfolio" id="portfolio" data-scrollRight>
+    <h1 class="c-black fs-32">PORTFÓLIO</h1>
+    <div class="portfolio-container">
+      <div>
+        <img src="./assets/img/portfolio-dog.svg" alt="">
+      </div>
+      <div>
+        <img src="./assets/img/portfolio-cat.svg" alt="">
+      </div>
+      <div>
+        <img src="./assets/img/portfolio-fish.svg" alt="">
+      </div>
+    </div>
+    <div class="btn-component-3">
+      <button class="c-black fs-22">VER MAIS</button>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="footer-container">
+      <img src="./assets/img/IMG-LOGO-footer.svg" alt="">
+    </div>
+  </footer>
 
   <script type="module" src="./assets/script/index.js"></script>
 </body>

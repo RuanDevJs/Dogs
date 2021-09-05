@@ -51,3 +51,20 @@ function Slide(){
 
   setTimeout(Slide, 4000)
 }Slide();
+
+function ScrollNav(){
+  const navElement = document.querySelectorAll("[data-nav] li a");
+
+  navElement.forEach((el, index) => {
+    el.addEventListener('click', e => {
+      e.preventDefault();
+      const href = el.getAttribute("href");
+      const distance = document.querySelector(href).offsetTop;
+
+      scrollTo({
+        top: distance,
+        behavior: "smooth"
+      })
+    })
+  })
+}ScrollNav();

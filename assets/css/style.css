@@ -1,4 +1,5 @@
 @import "./reset.css";
+@import "./responsive.css";
 @import "./animate.css";
 
 /***********
@@ -243,10 +244,12 @@ body {
 
 [data-slide] img {
   height: 320px !important;
+  max-width: 100% !important;
 }
 
 [data-slide] p {
   line-height: 21px;
+  flex: 1;
 }
 
 /***********
@@ -320,4 +323,141 @@ body {
   text-transform: uppercase;
   letter-spacing: 1px;
   margin-bottom: 5px;
+}
+
+/***********
+  Contato
+************/
+
+.contato {
+  padding: 20px;
+}
+
+.contato > h1 {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 900;
+}
+
+.contato > h1::after {
+  content: "";
+  width: 100px;
+  margin: 0 auto;
+  height: 2px;
+  display: block;
+  background: #c2c2c2;
+}
+
+.contato-container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.contato-item {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.contato-item img {
+  max-width: 100%;
+  border: 2px solid #f2f2f2;
+}
+
+.contato-item h2 {
+  font-weight: 900;
+  text-transform: capitalize;
+  letter-spacing: 1.2px;
+  padding: 5px 0;
+}
+
+.contato-item p {
+  font-weight: 300;
+  text-transform: capitalize;
+  letter-spacing: 1.2px;
+  padding: 5px 0;
+}
+
+.contato-item textarea {
+  border: 4px solid #f2f2f2;
+  max-width: 460px;
+  outline: 0;
+  font-weight: 700;
+}
+
+/***********
+  Portfólio
+************/
+
+.portfolio {
+  padding: 20px;
+  margin-top: 50px;
+}
+
+.portfolio > h1 {
+  font-weight: 900;
+  letter-spacing: 2px;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 5px 0;
+}
+
+.portfolio > h1::after {
+  content: "";
+  display: block;
+  max-width: 100px;
+  height: 2px;
+  margin: 0 auto;
+  margin-bottom: 20px !important;
+  background: #f2f2f2;
+}
+
+.portfolio-container {
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.btn-component-3 {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-component-3 > button {
+  padding: 5px 0;
+  width: 220px;
+  background: none;
+  outline: 0;
+  cursor: pointer;
+  border: 2px solid #262525;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 25px;
+  transition: 0.2s ease-out;
+  text-align: center;
+  margin: 10px auto !important;
+}
+
+.btn-component-3 > button:hover {
+  background-color: #262525;
+  color: #f2f2f2;
+}
+
+/***********
+  Footer
+************/
+
+.footer {
+  background: #262525;
+  padding: 20px;
+}
+
+.footer-container {
+  max-width: 960px;
+  margin: 0 auto;
 }
