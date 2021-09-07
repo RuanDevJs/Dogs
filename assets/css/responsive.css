@@ -1,6 +1,25 @@
 @media only screen and (max-width: 767px) {
+  /** Header **/
+
+  .header-nav {
+    justify-content: center !important;
+  }
+
+  .header-nav > div:nth-child(2) {
+    display: none !important;
+  }
+
+  .header-nav > .btn-component {
+    display: none !important;
+  }
+
   [data-slide] {
     flex-wrap: wrap;
     justify-content: center !important;
+  }
+
+  /** Cokies **/
+  .cookies {
+    display: none;
   }
 }

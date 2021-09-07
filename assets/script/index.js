@@ -80,3 +80,23 @@ function typeWritter(){
   });
 
 }typeWritter();
+
+function Cookies(){
+  const buttons = document.querySelectorAll('[data-accept]');
+  const cookies = document.querySelector("[data-cookies]");
+
+  buttons.forEach((el, index) => {
+    const booleanValue = el.dataset.accept;
+    
+    el.addEventListener('click', e => {
+      if(booleanValue === "true"){
+        cookies.classList.add("desactive");
+      }else{
+        cookies.classList.add("desactive");
+        alert("Atenção, utilizamos biscoitos para melhorar sua expereiência.");
+      }
+    });
+
+  }); 
+  
+}Cookies();

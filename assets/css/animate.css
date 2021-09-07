@@ -45,3 +45,9 @@
   opacity: 1;
   animation: AnimateRight 0.5s forwards;
 }
+
+/*******************/
+
+[data-cookies].desactive {
+  animation: BackLeft 0.5s forwards;
+}

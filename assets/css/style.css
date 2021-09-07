@@ -71,8 +71,8 @@ body {
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
-  height: 100vh;
   padding: 36px 0;
+  height: 100vh;
 }
 
 .header-container {
@@ -501,17 +501,40 @@ body {
   letter-spacing: 2px;
 }
 
-.cookies-title h2::after {
-  content: "";
-  display: block;
-  width: 95px;
-  height: 2px;
-  background-color: #f2f2f2;
-}
-
 .cookies-title p {
   margin: 5px 0;
   font-weight: 300;
+}
+
+.cookies-title p > span {
+  font-weight: 300;
+  color: #c2c2c2;
+  cursor: pointer;
+  text-align: center;
+  transition: 0.5s ease-out;
+}
+
+.cookies-title p > span:hover {
+  color: #e4c01a;
+  transition: 0.5s ease-in;
+}
+
+.cookies-title p > span::after {
+  content: "";
+  display: block;
+  width: 180px;
+  height: 2px;
+  background-color: #f2f2f2;
+  transition: 0.5s ease-out;
+}
+
+.cookies-title p > span:hover::after {
+  content: "";
+  display: block;
+  width: 180px;
+  height: 2px;
+  background-color: #f1f1f1;
+  transition: 0.5s ease-in;
 }
 
 .btn-cookies {
@@ -525,27 +548,28 @@ body {
   outline: 0;
   cursor: pointer;
   color: #ffffff;
-  background-color: #e4c01a;
-  border: 4px solid #f2f2f2;
+  background-color: #f2cb05;
+  border: none;
   text-transform: uppercase;
   font-weight: 900;
   letter-spacing: 2px;
   font-size: 14px;
-  transition: 0.2s ease-out;
+  transition: 0.3s ease-out;
   text-align: center;
   cursor: pointer;
-}
-
-.btn-cookies button:nth-child(1):hover {
-  background-color: #ffffff;
-  color: #262525;
 }
 
 .btn-cookies button:nth-child(2) {
   background-color: #ff1202 !important;
 }
 
+.btn-cookies button:nth-child(1):hover {
+  transition: 0.3s ease-in;
+  background-color: #f2b705;
+  color: #ffffff;
+}
+
 .btn-cookies button:nth-child(2):hover {
-  background-color: #ffffff !important;
-  color: #262525;
+  background-color: #bf0404 !important;
+  color: #ffffff;
 }
