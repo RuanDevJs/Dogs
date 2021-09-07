@@ -2,7 +2,7 @@ function AnimeIntro(){
   const elementsAnime = document.querySelectorAll('[data-AnimeIntro]');
 
   elementsAnime.forEach((el, index) => {
-    setTimeout(() => el.classList.add("activeAnimeIntro"), index * 100)
+    setTimeout(() => el.classList.add("activeAnimeIntro"), index * 120)
   });
 }AnimeIntro();
 
@@ -68,3 +68,15 @@ function ScrollNav(){
     })
   })
 }ScrollNav();
+
+function typeWritter(){
+  const element = document.querySelector("[data-typeWritter]");
+  const elementString = element.innerHTML.split("");
+  
+  element.innerHTML = "";
+
+  elementString.forEach((el, index) => {
+    setTimeout(() => element.innerHTML += el, index * 50)
+  });
+
+}typeWritter();

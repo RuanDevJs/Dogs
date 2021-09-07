@@ -461,3 +461,10 @@ body {
   max-width: 960px;
   margin: 0 auto;
 }
+
+[data-typeWritter]::after {
+  content: "|";
+  font-size: 25px;
+  animation: LightUp 0.7s infinite;
+  transition: cubic-bezier(1, 0, 0, 1);
+}

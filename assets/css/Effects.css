@@ -30,3 +30,14 @@
     transform: translate3d(0px, 0, 0);
   }
 }
+
+@keyframes LightUp {
+  0%,
+  100% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
