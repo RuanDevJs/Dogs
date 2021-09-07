@@ -49,5 +49,6 @@
 /*******************/
 
 [data-cookies].desactive {
+  display: none;
   animation: BackLeft 0.5s forwards;
 }
